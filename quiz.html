@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="quiz.css">
+    <!-- Boxiocns Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./imagens/favicon-32x32.png" type="image/x-icon">
+     <title>Quiz</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-coffee'></i>
+      <span class="logo_name">Café Royal</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="home.html">
+          <i class='bx bx-home-heart' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="home.html">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="plantio.html">
+            <i class='bx bx-spa' ></i>
+            <span class="link_name">Plantio</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="plantio.html">Plantio</a></li>
+          <li><a href="plantio.html#plan">O Plantation</a></li>
+          <li><a href="plantio.html#Geo">Geografia do Café</a></li>
+          <li><a href="plantio.html#Imi">Imigração</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="cultura da economia.html">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="link_name">Ecônomia</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="cultura da economia.html">Ecônomia</a></li>
+          <li><a href="cultura da economia.html#Eco">Industrialização</a></li>
+          <li><a href="cultura da economia.html#Con">Consumo</a></li>
+          <li><a href="cultura da economia.html#Comen">Deixe seu comentário</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="quiz.html">
+          <i class='bx bx-question-mark' style='color:#fffbfb' ></i>
+          <span class="link_name">Quiz</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="quiz.html">Quiz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Quiz</span>
+    </div>
+        </div> 
+
+        <div class="container">	
+            <div class="row">
+                <div class="two-thirds column">
+                <div id="progress_bar"></div>
+                    <form class="questions_box">
+        
+                        <div id="question-1">
+                          <h2>Questão 1</h2>
+                            <h3>O café impulsionou a industrialização do Brasil ? </h3>
+                            <div class="input">
+                            <input id="question-1-answer-a" type="radio" name="favelang" value=0> Falso<br>
+                            <input id="question-1-answer-b" type="radio" name="favelang" value=1> Verdadeiro<br>
+                            <div id="submit1" class="button">Enviar Resposta</div>
+                            </div>
+                    <div class="clearfix"></div>
+                        </div>
+        
+                       <div id="question-2">
+                           <h2>Questão 2</h2>
+                           <h3>Em que ano começou a crise do café?</h3>
+                           <div class="input">
+                          <input id="question-2-answer-a" type="radio" name="favelang" value="1"> 1906<br>
+                           <input id="question-2-answer-b" type="radio" name="favelang" value="0"> 1910<br>
+                           <input id="question-2-answer-c" type="radio" name="favelang" value="0"> 1905<br>
+                           <input id="question-2-answer-d" type="radio" name="favelang" value="0"> 1916<br>
+                           <div id="submit2" class="button">Enviar Resposta</div>
+                           </div>
+                   <div class="clearfix"></div>
+                       </div>
+                      
+                       <div id="question-3">	
+                           <h2>Questão 3</h2>
+                           <h3>Em qual região do Brasil o café melhor se adaptou?</h3>
+                           <div class="input">
+                          <input id="question-3-answer-a" type="radio" name="favelang" value="1"> Sudeste<br>
+                           <input id="question-3-answer-b" type="radio" name="favelang" value="0"> Nordeste<br>
+                           <input id="question-3-answer-c" type="radio" name="favelang" value="0"> Região Central<br>
+                           <div id="submit3" class="button">Enviar Resposta</div>
+                           </div>
+                   <div class="clearfix"></div>
+                       </div>
+        
+                 <div id="question-4">
+                    <h2>Questão 4</h2>
+
+                    <h3>A economia do café sucedeu a do _______</h3>
+                    <div class="input">
+                    <input id="question-1-answer-a" type="radio" name="favelang" value="1"> Ouro<br>
+                    <input id="question-1-answer-b" type="radio" name="favelang" value="0"> Cana-de-açucar<br>
+                    </div>
+                    <div id="submit4" class="button">Enviar Resposta</div>
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                 <div id="question-5"> 
+                   <h2>Obrigado por responder a pesquisa!</h2>
+                   <h1 id=printtotalscore></h1>
+                   <p id=printscoreinfo></p>
+                  </div>
+                 </div>
+                    </form>
+                </div>
+              </div>
+
+    <div class="caixa distanciamento">
+      <span class="textoo" id="erro"><h2>Tipos de café para pedir sem erro:</h2></span>
+      <div class="semerro">
+        <p>Imagine você leitor indo até uma cafeteria e diante do cardápio não sabe o que pedir ou sempre escolhe a
+           mesma bebida, que tal variar o seu repertório de consumo?
+          Aqui temos 8 opções diferenciadas de café para sugerir.</p> 
+          </div>
+          </div>
+          
+
+          <div class="indicacao">
+            <img class="Cafe1" src="./indicação/cafe-ristretto.jpg" height="280" width="250">
+            <div class="image__overlay image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Ristretto</center></div>
+              <p class="descricao-imagem">
+                O café Ristretto é preparado com metade da água, embora a quantidade de café seja a mesma, uma moagem mais fina é usada para retardar sua extração.
+              </p>
+            </div>
+            <img class="Cafe2" src="./indicação/Irish coffee.jpg" height="280" width="250">
+            <div class="image__overlay1 image__overlay--blur">
+              <div class="titulo-imagem"><center>Irish Coffee</center></div>
+              <p class="descricao-imagem">
+                Irish coffee (ou café irlandês) é uma bebida a base de café, uísque irlandês, açúcar e chantilly, ele tem uma aparêcnia semelhante ao de uma cerveja.
+              </p>
+            </div>
+            <img class="Cafe3" src="./indicação/macchiato.jpg" height="280" width="250">
+            <div class="image__overlay2 image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Macchiato</center></div>
+              <p class="descricao-imagem">
+                Cafè macchiato é uma variedade típica de café com leite italiana, consistindo em um café expresso misturado com um pouco de leite quente com espuma. O termo faz referência à mancha de leite, no caffè macchiato.
+              </p>
+            </div>
+            <img class="Cafe4" src="./indicação/Cold Brew.jpg" height="280" width="250">
+            <div class="image__overlay3 image__overlay--blur">
+              <div class="titulo-imagem"><center>Cold Brew</center></div>
+              <p class="descricao-imagem">
+                O café Cold Brew é um método de infusão que não utiliza água quente para extrair as características do grão. Dessa forma, o resultado é uma bebida gelada com sabor refrescante e leve.
+              </p>
+            </div>
+            </div>
+            <h4 class="melhores"><center>OS MELHORES</center></h4>
+            <div class="indicacao2">
+            <img class="Cafe5" src="./indicação/Frappé.jpg" height="280" width="250">
+            <div class="image__overlay4 image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Frasppé</center></div>
+              <p class="descricao-imagem">
+                Café Frasppé, é um café solúvel gelado com cubos de gelo e espumado num shaker ou liquidificador, ela consiste, basicamente, na mistura do frappé com o cappuccino com chantilly por cima
+              </p>
+            </div>
+            <img class="Cafe6" src="./indicação/Café Gelado.jpg" height="280" width="250">
+            <div class="image__overlay5 image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Gelado</center></div>
+              <p class="descricao-imagem">
+                O café gelado é uma bebida preparada à base de café, misturado com alimento congelado. Este tipo de bebida é mais adequado nos meses de verão, mas também pode ser apreciada nos dias mais frios do inverno.
+              </p>
+            </div>
+            <img class="Cafe7" src="./indicação/Café Affogatto.jpg" height="280" width="250">
+            <div class="image__overlay6 image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Affogatto</center></div>
+              <p class="descricao-imagem">
+                O affogato é uma sobremesa italiana feita à base de café. É servido em uma taça de gelato de baunilha acompanhado de uma dose quente de café expresso
+              </p>
+            </div>
+            <img class="Cafe8" src="./indicação/café duplo.jpg" height="280" width="250">
+            <div class="image__overlay7 image__overlay--blur">
+              <div class="titulo-imagem"><center>Café Duplo</center></div>
+              <p class="descricao-imagem">
+                Equivale a dois shots de espresso numa xícara: aproximadamente, 60ml. Porém, também leva o dobro de pó. No preparo, o duplo corresponde a “1 café espresso + 1 café espresso”.
+              </p>
+            </div>
+          </div>
+          
+    <footer>
+      <div class="social">
+        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' style="color: #faf0e6"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook' style="color: #faf0e6"></i></a> 
+        <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' style="color: #faf0e6"></i></a> 
+      </div>
+      <div class="center">
+          <span><strong>Criado por Café Royal</strong></span><br>
+          <span><strong> 2022 | Todos os diteitos reservados &copy;</strong> </span>
+      </div>
+    </footer>
+  </section>
+  <script src="./JS/main2.js"></script>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
+
